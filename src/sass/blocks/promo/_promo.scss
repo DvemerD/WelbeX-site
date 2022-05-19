@@ -1,0 +1,177 @@
+.promo {
+    position: relative;
+    &__wrapper {
+        margin-top: 135px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 58px;
+        color: $light-text-color;
+        width: 362px;
+        span {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 58px;
+            background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), $light-text-color;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+    &__subtitle {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $light-text-color;
+        width: 275px;
+        margin-top: 30px;
+    }
+    &__polyhedron {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -2;
+    }
+    &__mouse {
+        margin-top: 110px;
+        display: inline-block;
+        transform: translate(-50%);
+    }
+    &__offer {
+        width: 300px;
+        text-align: right;
+    }
+    &__title-mini {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: $light-text-color;
+        span {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: right;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+    &__offer-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    &__offer-item {
+        margin-top: 30px;
+        &:nth-child(2n) {
+            margin-left: 30px;
+        }
+    }
+    &__offer-title {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $light-text-color;
+    }
+    &__offer-text {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $light-text-color;
+        max-width: 135px;
+        margin-top: 5px;
+    }
+    &__button {
+        margin-top: 60px;
+    }
+    &__bg {
+        .purple-light,
+        .yellow-light,
+        .red-light {
+            position: absolute;
+            opacity: 0.5;
+            filter: blur(200px);
+            z-index: -5;
+        }
+        .purple-light {
+            width: 259px;
+            height: 259px;
+            left: 50%;
+            transform: translate(-50%);
+            top: -154px;
+            background: #833ab4;
+        }
+        .yellow-light {
+            width: 280px;
+            height: 280px;
+            left: 50%;
+            transform: translate(-50%);
+            top: 505px;
+            background: #fcb045;
+            z-index: 1;
+        }
+        .red-light {
+            width: 311px;
+            height: 311px;
+            left: -102px;
+            top: 251px;
+            background: #961a1a;
+        }
+    }
+    &__glass-bg {
+        position: absolute;
+        width: 641px;
+        height: 702px;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        background: radial-gradient(
+            238.53% 189.02% at 3.2% 3.49%,
+            rgba(255, 246, 233, 0.1) 0%,
+            rgba(26, 29, 35, 0.1) 26.62%,
+            rgba(26, 29, 35, 0.1) 52.1%,
+            rgba(26, 29, 35, 0.01) 70.17%,
+            rgba(26, 29, 35, 0) 100%
+        );
+        backdrop-filter: blur(15px);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        .line {
+            position: relative;
+            height: 100%;
+            width: 1px;
+            background: linear-gradient(#fcb045 12.92%, #833ab4 46.59%);
+            opacity: 0.5;
+            z-index: 1;
+        }
+        .yellow-ball {
+            position: relative;
+            width: 46px;
+            height: 46px;
+            transform: translate(-50%, -50%) !important;
+            z-index: 2;
+        }
+    }
+}

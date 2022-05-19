@@ -1,0 +1,37 @@
+.line-bg__wrapper {
+    position: fixed;
+    width: 100%;
+    max-width: inherit;
+    top: 0;
+    min-height: 100vh;
+    z-index: -15;
+    .line-bg {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        opacity: 0.1;
+        background: linear-gradient(270deg, #fcb045 12.94%, #833ab4 46.6%);
+        &:nth-child(1) {
+            left: 0;
+        }
+        &:nth-child(2) {
+            left: 470px;
+        }
+        &:nth-child(3) {
+            right: 166px;
+            width: 0.5px;
+        }
+        &:nth-child(4) {
+            right: 0;
+        }
+    }
+}
+.line-bg__glass {
+    position: absolute;
+    width: 1px;
+    height: 705px;
+    left: 0;
+    top: 0;
+    opacity: 0.1;
+    background: linear-gradient(270deg, #fcb045 12.94%, #833ab4 46.6%);
+}

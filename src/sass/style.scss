@@ -1,0 +1,22 @@
+@import "base/variables";
+@import "base/mixins";
+html {
+}
+
+body {
+    position: relative;
+    background-color: $bgr-color;
+    height: auto;
+}
+
+.container {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@import "blocks/line-bg/line-bg";
+@import "blocks/buttons/buttons";
+
+@import "blocks/header/header";
+@import "blocks/promo/promo";
