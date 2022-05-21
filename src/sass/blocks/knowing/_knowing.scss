@@ -1,0 +1,103 @@
+.knowing {
+    background: linear-gradient(160deg, rgba(14, 16, 20, 0.1) 68%, rgba(186, 86, 209, 0.32) 120%);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    &__text {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        max-width: 360px;
+        span {
+            background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+    &__video-container {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__video {
+        margin: 50px 30px 0 0;
+        position: relative;
+        video {
+            max-width: 457px;
+            object-fit: cover;
+        }
+    }
+    &__video-overlow {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(14, 16, 20, 0.5), rgba(14, 16, 20, 0.5));
+    }
+    &__play {
+        &:hover ~ .knowing__video {
+            width: 100px;
+        }
+    }
+    &__video-text {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        width: 171px;
+        margin-top: 10px;
+    }
+    &__founder {
+        position: relative;
+    }
+    &__founder-text {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        width: 200px;
+        margin-left: -83px;
+        padding-top: 7px;
+    }
+    &__founder-photo {
+        margin: -70px -29px -20px 0;
+    }
+    &__bg {
+        .purple-ball {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            bottom: 177px;
+            right: 0;
+            transform: translateX(50%);
+            background: radial-gradient(
+                64% 64% at 27.25% 26.5%,
+                rgba(236, 208, 255, 0.64) 0%,
+                rgba(161, 93, 207, 0.24) 59.67%,
+                rgba(118, 49, 164, 0.208) 78.59%,
+                rgba(86, 24, 128, 0.232) 100%
+            );
+            box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25), inset -4px 4px 7px rgba(161, 138, 180, 0.2);
+            backdrop-filter: blur(4px);
+            border-radius: 100%;
+            filter: blur(4px);
+        }
+        .purple-light {
+            position: absolute;
+            width: 308px;
+            height: 308px;
+            right: -130px;
+            top: 10px;
+            background: #833ab4;
+            opacity: 0.5;
+            filter: blur(200px);
+        }
+    }
+}

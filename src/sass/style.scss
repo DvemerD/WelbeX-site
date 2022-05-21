@@ -1,6 +1,7 @@
 @import "base/variables";
 @import "base/mixins";
 html {
+    color: $light-text-color;
 }
 
 body {
@@ -17,6 +18,8 @@ body {
 
 @import "blocks/line-bg/line-bg";
 @import "blocks/buttons/buttons";
+@import "blocks/titles/titles";
 
 @import "blocks/header/header";
 @import "blocks/promo/promo";
+@import "blocks/knowing/knowing";

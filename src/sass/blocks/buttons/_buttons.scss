@@ -14,4 +14,21 @@
     &:hover {
         box-shadow: 0px 0px 40px 6px rgba(64, 119, 243, 0.3);
     }
+    &__play {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        background: transparent;
+        border: 1px solid $light-text-color;
+        cursor: pointer;
+        &:hover {
+            background-color: $blue-color;
+            border-color: $blue-color;
+            box-shadow: 0px 4px 30px -5px rgba(180, 200, 247, 0.5), inset 0px 4px 67px rgba(255, 255, 255, 0.25);
+        }
+        
+    }
 }
