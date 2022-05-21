@@ -1,0 +1,78 @@
+.about-us {
+    position: relative;
+    &__wrapper {
+        padding-top: 140px;
+    }
+    &__text {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        max-width: 390px;
+        margin-top: 70px;
+        span {
+            font-weight: 700;
+            background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+    &__items {
+        max-width: 977px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    &__item {
+        max-width: 125px;
+        &:first-child {
+            max-width: 220px;
+        }
+        .item {
+            &__title {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 58px;
+                text-transform: uppercase;
+                background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+            &__descr {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                margin-top: 5px;
+            }
+        }
+    }
+    .purple-light {
+        position: absolute;
+        width: 308px;
+        height: 308px;
+        right: 200px;
+        top: -150px;
+        background: #ee3e34;
+        opacity: 0.2;
+        filter: blur(150px);
+    }
+    .red-light {
+        position: absolute;
+        width: 364px;
+        height: 364px;
+        left: -100px;
+        top: 50px;
+        background: #961a1a;
+        opacity: 0.3;
+        filter: blur(150px);
+    }
+}
