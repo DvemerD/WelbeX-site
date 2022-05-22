@@ -1,0 +1,102 @@
+.decision {
+    position: relative;
+    &__wrapper {
+        padding-top: 150px;
+    }
+    &__subtitle {
+        max-width: 460px;
+        margin-right: 14px;
+    }
+    &__text {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 70px;
+    }
+    &__subtitle-mini {
+        max-width: 320px;
+    }
+    &__items {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 140px;
+        .item {
+            &__title {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &__list {
+                margin-top: 20px;
+                max-height: 330px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+            }
+            &__list-item {
+                position: relative;
+                padding: 10px 0;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                max-width: 263px;
+                list-style-type: none;
+                padding-left: 30px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 1.4em;
+                    left: 0;
+                    width: 20px;
+                    height: 1px;
+                    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+                }
+            }
+        }
+    }
+    &__work-list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    &__work-item {
+        max-width: 300px;
+    }
+    &__work-icon {
+        width: 70px;
+        height: 70px;
+    }
+    &__work-title {
+        margin-top: 20px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__work-descr {
+        margin-top: 20px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .yellow-light {
+    }
+    .yellow-ball {
+        position: absolute;
+        width: 374px;
+        height: 374px;
+        right: 0;
+        top: 250px;
+        background: #fcb045;
+        opacity: 0.3;
+        filter: blur(200px);
+    }
+}

@@ -5,20 +5,9 @@
         justify-content: space-between;
         margin-top: 70px;
     }
-    &__text {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
+    &__subtitle {
         line-height: 29px;
         max-width: 360px;
-        span {
-            background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-        }
     }
     &__video-container {
         display: flex;
