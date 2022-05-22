@@ -1,0 +1,90 @@
+.audit {
+    position: relative;
+    &__wrapper {
+        padding: 60px 0 50px;
+    }
+    &__text {
+        max-width: 310px;
+    }
+    &__subtitle-mini {
+        margin-top: 20px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    .red-ball {
+        position: absolute;
+        width: 83px;
+        height: 83px;
+        top: -15px;
+        right: 215px;
+        background: radial-gradient(
+            64% 64% at 27.25% 26.5%,
+            rgba(255, 208, 208, 0.536) 0%,
+            rgba(212, 93, 93, 0.264) 59.67%,
+            rgba(167, 49, 49, 0.248) 78.59%,
+            rgba(130, 25, 25, 0.248) 100%
+        );
+        box-shadow: 3px 6px 27px -10px rgba(238, 62, 52, 0.15), inset -7px 6px 7px rgba(238, 62, 52, 0.1);
+        backdrop-filter: blur(8px);
+        border-radius: 100%;
+        filter: blur(4px);
+    }
+    .red-light {
+        position: absolute;
+        width: 670px;
+        height: 670px;
+        right: 0;
+        top: 2px;
+        background: #961a1a;
+        opacity: 0.3;
+        filter: blur(200px);
+    }
+    .purple-ball {
+        position: absolute;
+        width: 38px;
+        height: 38px;
+        right: 0;
+        transform: translateX(50%);
+        top: 333px;
+        background: radial-gradient(
+            64% 64% at 27.25% 26.5%,
+            rgba(236, 208, 255, 0.64) 0%,
+            rgba(161, 93, 207, 0.24) 59.67%,
+            rgba(118, 49, 164, 0.208) 78.59%,
+            rgba(86, 24, 128, 0.232) 100%
+        );
+        box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25), inset -4px 4px 7px rgba(161, 138, 180, 0.2);
+        backdrop-filter: blur(4px);
+        border-radius: 100%;
+    }
+    .purple-light {
+        position: absolute;
+        width: 606px;
+        height: 606px;
+        left: -50%;
+        top: 405px;
+        background: #833ab4;
+        opacity: 0.4;
+        filter: blur(849px);
+    }
+    &__glass-bg {
+        position: absolute;
+        width: 100%;
+        height: 1155px;
+        left: 0;
+        top: 0px;
+        background: linear-gradient(
+            145deg,
+            rgba(255, 246, 233, 0.1) -2.3%,
+            rgba(26, 29, 35, 0.05) 27.26%,
+            rgba(26, 29, 35, 0.05) 51.31%,
+            rgba(26, 29, 35, 0.01) 68.42%,
+            rgba(26, 29, 35, 0.01) 92.73%
+        );
+        backdrop-filter: blur(15px);  
+        background: url(../img/noise-bg.png) center (center/cover) no-repeat;      
+    }
+}

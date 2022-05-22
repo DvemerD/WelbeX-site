@@ -1,0 +1,50 @@
+.form-call {
+    width: 100%;
+    max-width: 666px;
+    &__label-phone {
+        display: block;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #656566;
+    }
+    &__input {
+        background: rgba(14, 16, 20, 0.6);;
+        border: 1px solid #25262c;
+        padding: 20px 15px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $light-text-color;
+        width: 100%;
+        margin-top: 10px;
+        outline: none;
+        box-sizing: border-box;
+        max-width: 262px;
+    }
+    &__button {
+        width: 100%;
+        margin-right: 30px;
+        max-width: 262px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+    &__person-data {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        max-width: 340px;
+        a {
+            color: $light-text-color;
+        }
+    }
+}

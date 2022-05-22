@@ -159,6 +159,7 @@
         );
         backdrop-filter: blur(15px);
         transform: matrix(-1, 0, 0, 1, 0, 0);
+        background: url(../img/noise-bg.png) center (center/cover) no-repeat;      
         .line {
             position: relative;
             height: 100%;
