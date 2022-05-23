@@ -84,7 +84,24 @@
             rgba(26, 29, 35, 0.01) 68.42%,
             rgba(26, 29, 35, 0.01) 92.73%
         );
-        backdrop-filter: blur(15px);  
-        background: url(../img/noise-bg.png) center (center/cover) no-repeat;      
+        backdrop-filter: blur(15px);
+        background: url(../img/noise-bg.png) center (center/cover) no-repeat;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            opacity: 0.5;
+        }
+        &::before {
+            top: 0;
+            background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 42.2%, #fcb045 100%);
+        }
+        &::after {
+            bottom: 0;
+            background: linear-gradient(90deg, #fcb045 0%, rgba(253, 29, 29, 0.7) 30.37%, rgba(253, 29, 29, 0) 43.81%);
+        }
     }
 }
