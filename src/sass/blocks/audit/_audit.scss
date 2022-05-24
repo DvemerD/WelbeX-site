@@ -76,16 +76,15 @@
         height: 1155px;
         left: 0;
         top: 0px;
-        background: linear-gradient(
+        background: url(../img/noise-bg.png), linear-gradient(
             145deg,
             rgba(255, 246, 233, 0.1) -2.3%,
             rgba(26, 29, 35, 0.05) 27.26%,
             rgba(26, 29, 35, 0.05) 51.31%,
             rgba(26, 29, 35, 0.01) 68.42%,
             rgba(26, 29, 35, 0.01) 92.73%
-        );
+        ) center (center/cover) no-repeat;
         backdrop-filter: blur(15px);
-        background: url(../img/noise-bg.png) center (center/cover) no-repeat;
         &::before,
         &::after {
             content: "";
