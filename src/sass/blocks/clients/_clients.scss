@@ -1,0 +1,48 @@
+.clients {
+    padding: 150px 0;
+    &__text {
+        display: flex;
+        margin-top: 70px;
+    }
+    &__subtitle {
+        max-width: 390px;
+        margin-right: 85px;
+    }
+    &__subtitle-mini {
+        max-width: 310px;
+    }
+    &__items {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        margin-top: 30px;
+    }
+    &__descr {
+        margin-top: 10px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .purple-ball {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        right: 156px;
+        top: 138px;
+        background: radial-gradient(
+            64% 64% at 27.25% 26.5%,
+            rgba(236, 208, 255, 0.64) 0%,
+            rgba(161, 93, 207, 0.24) 59.67%,
+            rgba(118, 49, 164, 0.208) 78.59%,
+            rgba(86, 24, 128, 0.232) 100%
+        );
+        box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25), inset -4px 4px 7px rgba(161, 138, 180, 0.2);
+        backdrop-filter: blur(4px);
+        border-radius: 100%;
+        filter: blur(4px);
+    }
+}
