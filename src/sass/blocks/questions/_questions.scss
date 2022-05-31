@@ -1,0 +1,90 @@
+.questions {
+    padding: 150px 0;
+    &__text {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: minmax(max-content, 475px) minmax(max-content, 300px);
+    }
+    &__subtitle {
+        max-width: 290px;
+    }
+    &__subtitle-mini {
+        max-width: 310px;
+    }
+    &__items {
+        margin-top: 50px;
+    }
+    &__item {
+        box-sizing: border-box;
+        max-width: 975px;
+        height: 60px;
+        background: #0e1014;
+        border: 0.5px solid #25262c;
+        backdrop-filter: blur(15px);
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 4s ease-in-out;
+        &:hover {
+            border-image-source: linear-gradient(
+                36.47deg,
+                rgba(255, 216, 160, 0.5) 0.05%,
+                rgba(253, 135, 135, 0.5) 65%,
+                #dba6ff 100.39%
+            );
+            border-image-slice: 1;
+            color: #fff;
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+            .questions__item-title {
+                color: #fff;
+            }
+        }
+        &_active {
+            height: auto;
+            .questions__item-text {
+                background: linear-gradient(95.49deg, rgba(255, 246, 233, 0.1) 8.22%, rgba(26, 29, 35, 0.1) 75.4%);
+                svg {
+                    transform: translateY(-50%) rotate(-90deg);
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+
+        }
+    }
+    &__item-text {
+        position: relative;
+        padding: 20px 55px 20px 30px;
+        svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+            width: 30px;
+            height: 30px;
+            path {
+                fill: #656566;
+            }
+        }
+    }
+    &__item-title {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__item-descr {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 600px;
+        padding: 30px;
+    }
+}

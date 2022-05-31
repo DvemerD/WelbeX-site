@@ -4,12 +4,12 @@
         padding-top: 150px;
     }
     &__text {
-        display: flex;
+        display: grid;
+        grid-template-columns: minmax(max-content, 475px) minmax(max-content, 300px);
         margin-top: 70px;
     }
     &__subtitle {
         max-width: 320px;
-        margin-right: 156px;
     }
     &__subtitle-mini {
         max-width: 310px;
@@ -34,7 +34,6 @@
                 rgba(26, 29, 35, 0.2) 75.65%,
                 rgba(26, 29, 35, 0.2) 97.87%
             );
-
         border: 1px solid #25262c;
         backdrop-filter: blur(15px);
     }
@@ -60,12 +59,10 @@
         margin-top: 20px;
     }
     .purple-light {
-        position: absolute;
         width: 382px;
         height: 382px;
         right: -165px;
         bottom: -50px;
-        background: #833ab4;
         opacity: 0.2;
         filter: blur(150px);
     }
@@ -75,48 +72,25 @@
         bottom: -320px;
     }
     .red-ball {
-        position: absolute;
         width: 41px;
         height: 41px;
         right: 0;
         transform: translateX(50%);
         bottom: -170px;
-        background: radial-gradient(
-            64% 64% at 27.25% 26.5%,
-            rgba(255, 208, 208, 0.536) 0%,
-            rgba(212, 93, 93, 0.264) 59.67%,
-            rgba(167, 49, 49, 0.248) 78.59%,
-            rgba(130, 25, 25, 0.248) 100%
-        );
-        box-shadow: 3px 6px 27px -10px rgba(130, 25, 25, 0.25), inset -7px 6px 7px rgba(238, 62, 52, 0.1);
-        backdrop-filter: blur(8px);
-        border-radius: 100%;
         filter: blur(5px);
     }
     .yellow-light {
-        position: absolute;
         width: 103px;
         height: 103px;
         left: 450px;
         bottom: -103px;
-        background: #fcb045;
-        opacity: 0.3;
         filter: blur(150px);
     }
     .yellow-ball {
-        position: absolute;
         left: 458px;
         bottom: -60px;
         width: 24px;
         height: 24px;
-        background: radial-gradient(
-            84.78% 84.78% at 0% 11.96%,
-            rgba(255, 233, 203, 0.568) 0%,
-            rgba(184, 131, 18, 0.8) 100%
-        );
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -4px 4px 7px rgba(255, 255, 255, 0.25);
-        backdrop-filter: blur(5px);
-        border-radius: 100%;
         filter: blur(5px);
     }
 }

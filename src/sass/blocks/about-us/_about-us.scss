@@ -3,7 +3,7 @@
     &__wrapper {
         padding-top: 140px;
     }
-    &__subtitle { 
+    &__subtitle {
         max-width: 390px;
         margin-top: 70px;
     }
@@ -42,24 +42,16 @@
             }
         }
     }
-    .purple-light {
-        position: absolute;
+    .orange-light {
         width: 308px;
         height: 308px;
         right: 200px;
         top: -150px;
-        background: #ee3e34;
-        opacity: 0.2;
-        filter: blur(150px);
     }
     .red-light {
-        position: absolute;
         width: 364px;
         height: 364px;
         left: -100px;
         top: 50px;
-        background: #961a1a;
-        opacity: 0.3;
-        filter: blur(150px);
     }
 }

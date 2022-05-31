@@ -1,0 +1,144 @@
+.letters {
+    position: relative;
+    padding: 50px 0;
+    &__content {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        max-width: 460px;
+    }
+    &__name {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        span {
+            font-weight: 700;
+            background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+    &__user {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #656566;
+        margin-top: 10px;
+    }
+    &__descr {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &__continued {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $blue-color;
+    }
+    &__descr {
+        margin-top: 30px;
+    }
+    &__continued {
+        position: relative;
+        display: block;
+        margin-top: 40px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        color: $blue-color;
+        svg {
+            margin-left: 5px;
+            height: 10px;
+            width: 6px;
+        }
+        &:hover {
+            color: #fff;
+            path {
+                fill: #fff;
+            }
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    &__item {
+        width: 200px;
+        height: 100px;
+        display: grid;
+        place-items: center;
+        background: rgba(14, 16, 20, 0.6);
+        border: 1px solid #25262c;
+        filter: grayscale(100%);
+        cursor: pointer;
+        transition: all 0.1s;
+        &:hover {
+            filter: grayscale(0%);
+            border-image-source: linear-gradient(
+                36.47deg,
+                rgba(255, 216, 160, 0.5) 0.05%,
+                rgba(253, 135, 135, 0.5) 65%,
+                #dba6ff 100.39%
+            );
+            border-image-slice: 1;
+        }
+        &:active {
+            background: linear-gradient(95.49deg, rgba(255, 246, 233, 0.1) 8.22%, rgba(26, 29, 35, 0.1) 75.4%);
+            border-color: transparent;
+            border-image-source: none;
+        }
+    }
+    .red-light {
+        width: 600px;
+        height: 600px;
+        top: -110px;
+        right: 0;
+        opacity: 0.2;
+    }
+    .purple-light {
+        width: 606px;
+        height: 606px;
+        left: 0;
+        transform: translateX(-30%);
+        top: -60px;
+        opacity: 0.3;
+    }
+    .purple-ball {
+        width: 22px;
+        height: 22px;
+        top: -60px;
+        right: 153px;
+        filter: blur(1px);
+    }
+    .yellow-ball {
+        width: 46px;
+        height: 46px;
+        bottom: 0px;
+        transform: translateY(50%);
+        left: 42%;
+    }
+    .red-ball {
+        width: 83px;
+        height: 83px;
+        bottom: 110px;
+        right: 9%;
+        filter: blur(5px);
+    }
+}

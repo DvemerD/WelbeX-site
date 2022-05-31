@@ -16,97 +16,60 @@
         max-width: 270px;
         margin-top: 30px;
     }
-    &__glass-bg {
-        position: absolute;
+    .glass-bg {
         top: 0;
-        background: url(../img/noise-bg.png),
-            linear-gradient(
-                162.2deg,
-                rgba(255, 246, 233, 0.1) -1.42%,
-                rgba(26, 29, 35, 0.1) 25.01%,
-                rgba(26, 29, 35, 0.1) 50.31%,
-                rgba(26, 29, 35, 0.2) 75.65%,
-                rgba(26, 29, 35, 0.2) 97.87%
-            );
-        backdrop-filter: blur(15px);
-        width: 100%;
-        height: 413px;
-        &::before {
-            content: "";
-            position: absolute;
-            height: 1px;
-            width: 100%;
-            background: linear-gradient(90deg, #833ab4 -9.79%, #fd1d1d 16.9%, #fcb045 100%);
-            opacity: 0.5;
-            top: 0;
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            height: 1px;
-            width: 100%;
-            background: linear-gradient(
-                90deg,
-                rgba(131, 58, 180, 0.4) 0%,
-                rgba(253, 29, 29, 0.38) 42.2%,
-                rgba(252, 176, 69, 0) 100%
-            );
-            opacity: 0.5;
-            bottom: 0;
-        }
     }
     .red-light {
-        position: absolute;
         width: 317px;
         height: 317px;
         right: -150px;
         top: -45px;
-        background: #961a1a;
-        opacity: 0.3;
         filter: blur(150px);
     }
     .red-ball {
-        position: absolute;
         width: 29px;
         height: 29px;
         right: 10.5%;
         top: -10px;
-        background: radial-gradient(
-            64% 64% at 27.25% 26.5%,
-            rgba(255, 208, 208, 0.536) 0%,
-            rgba(212, 93, 93, 0.264) 59.67%,
-            rgba(167, 49, 49, 0.248) 78.59%,
-            rgba(130, 25, 25, 0.248) 100%
-        );
-        box-shadow: 3px 6px 27px -10px rgba(238, 62, 52, 0.15), inset -7px 6px 7px rgba(238, 62, 52, 0.1);
-        backdrop-filter: blur(8px);
-        border-radius: 100%;
         filter: blur(5px);
     }
     .purple-light {
-        position: absolute;
         width: 314px;
         height: 311px;
         left: 127px;
         top: 50%;
-        background: #833ab4;
-        opacity: 0.6;
         filter: blur(300px);
     }
     .yellow-ball {
-        position: absolute;
         width: 46px;
         height: 46px;
         left: 449px;
         bottom: 0;
         transform: translateY(50%);
-        background: radial-gradient(
-            84.78% 84.78% at 0% 11.96%,
-            rgba(255, 233, 203, 0.568) 0%,
-            rgba(184, 131, 18, 0.8) 100%
-        );
-        box-shadow: 0px 4px 11px 1px rgba(184, 131, 18, 0.25), inset -4px 4px 7px rgba(255, 255, 255, 0.25);
-        backdrop-filter: blur(5px);
-        border-radius: 100%;
+    }
+}
+
+.demonstration {
+    .yellow-ball {
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    .red-ball {
+        top: 95px;
+    }
+    .purple-ball {
+        width: 32px;
+        height: 32px;
+        bottom: 0;
+        transform: translateY(50%);
+        right: 21.7%;
+    }
+    .red-light {
+        filter: blur(400px);
+        opacity: 0.6;
     }
 }

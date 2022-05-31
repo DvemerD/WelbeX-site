@@ -60,33 +60,17 @@
     }
     &__bg {
         .purple-ball {
-            position: absolute;
             width: 25px;
             height: 25px;
             bottom: 177px;
             right: 0;
             transform: translateX(50%);
-            background: radial-gradient(
-                64% 64% at 27.25% 26.5%,
-                rgba(236, 208, 255, 0.64) 0%,
-                rgba(161, 93, 207, 0.24) 59.67%,
-                rgba(118, 49, 164, 0.208) 78.59%,
-                rgba(86, 24, 128, 0.232) 100%
-            );
-            box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25), inset -4px 4px 7px rgba(161, 138, 180, 0.2);
-            backdrop-filter: blur(4px);
-            border-radius: 100%;
-            filter: blur(4px);
         }
         .purple-light {
-            position: absolute;
             width: 308px;
             height: 308px;
             right: -130px;
             top: 10px;
-            background: #833ab4;
-            opacity: 0.5;
-            filter: blur(200px);
         }
     }
 }

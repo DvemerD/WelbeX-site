@@ -1,0 +1,113 @@
+.footer {
+    padding: 150px 0 20px;
+    &__content {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        &:nth-child(2) {
+            div {
+                display: flex;
+            }
+            .footer__list {
+                &:first-child {
+                    margin-right: 50px;
+                }
+            }
+        }
+        &:last-child {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+    &__title {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #656566;
+    }
+    &__list {
+        margin-top: 20px;
+        list-style-type: none;
+    }
+    &__list-item {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 5px 0;
+        a {
+            color: $light-text-color;
+            text-decoration: none;
+        }
+        &:hover {
+            a {
+                color: #fff;
+            }
+        }
+    }
+    &__number {
+        color: $light-text-color;
+        text-decoration: none;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 20px;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &__social-links {
+        margin-top: 20px;
+    }
+    &__social-link {
+        text-decoration: none;
+        margin-right: 10px;
+        &:last-child {
+            margin: 0;
+        }
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__address {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 20px;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &__rights {
+        text-align: right;
+        margin-top: 35px;
+        p,
+        a {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        a {
+            text-decoration-line: underline;
+            color: $light-text-color;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
